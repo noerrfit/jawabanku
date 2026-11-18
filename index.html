@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Letter For You</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- AUDIO -->
+  <audio id="background-music" preload="auto" loop>
+    <source src="Virgoun - Surat Cinta Untuk Starla A Love Letter To Starla (Official Lyric Video).mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="background-decoration"></div>
+
+  <main class="presentation">
+
+    <!-- SLIDE 1: COVER -->
+    <section class="slide active cover">
+      <span class="eyebrow">A LETTER FROM ME</span>
+
+      <div class="flower">✿</div>
+
+      <h1>
+        Something<br>
+        <i>I want to tell you</i>
+      </h1>
+
+      <p class="subtitle">
+        A little story, written with sincerity.
+      </p>
+
+      <button class="next-btn" id="start-button">
+        Open my letter ♡
+      </button>
+    </section>
+
+    <!-- SLIDE 2 -->
+    <section class="slide">
+      <span class="number">01 / A BEGINNING</span>
+
+      <div class="content">
+        <span class="quote-mark">“</span>
+
+        <h2>
+          Aku tidak pernah<br>
+          merencanakan ini.
+        </h2>
+
+        <p>
+          Awalnya, semuanya berjalan biasa saja.
+          Sampai akhirnya percakapan sederhana
+          membuatku ingin mengenalmu lebih jauh.
+        </p>
+      </div>
+
+      <span class="footer-note">
+        some stories begin unexpectedly
+      </span>
+
+      <button class="next-btn" onclick="nextSlide()">
+        Continue →
+      </button>
+    </section>
+
+    <!-- SLIDE 3 -->
+    <section class="slide">
+      <span class="number">02 / ABOUT YOU</span>
+
+      <div class="content">
+        <div class="flower">♡</div>
+
+        <h2>
+          Ada hal yang<br>
+          aku hargai darimu.
+        </h2>
+
+        <p>
+          Cara kita bertukar cerita, menyampaikan
+          pikiran, dan memberi ruang satu sama lain.
+          Aku menghargai percakapan yang membuat
+          kita bisa menjadi diri sendiri.
+        </p>
+      </div>
+
+      <span class="footer-note">
+        little things matter
+      </span>
+
+      <button class="next-btn" onclick="nextSlide()">
+        Continue →
+      </button>
+    </section>
+
+    <!-- SLIDE 4 -->
+    <section class="slide">
+      <span class="number">03 / ABOUT ME</span>
+
+      <div class="content">
+        <span class="quote-mark">“</span>
+
+        <h2>
+          Aku punya<br>
+          banyak harapan.
+        </h2>
+
+        <p>
+          Tentang masa depan, keluarga, rumah,
+          dan kehidupan yang ingin aku bangun.
+          Aku ingin terus bertumbuh dan menjadi
+          seseorang yang mampu memperjuangkannya.
+        </p>
+      </div>
+
+      <span class="footer-note">
+        a future worth working for
+      </span>
+
+      <button class="next-btn" onclick="nextSlide()">
+        Continue →
+      </button>
+    </section>
+
+    <!-- SLIDE 5 -->
+    <section class="slide">
+      <span class="number">04 / HONESTLY</span>
+
+      <div class="content">
+        <div class="flower">♡</div>
+
+        <h2>
+          Dan iya,<br>
+          aku punya rasa.
+        </h2>
+
+        <p>
+          Aku tidak ingin menyangkal bahwa
+          kehadiranmu pernah membuat hari-hariku
+          terasa berbeda. Ada rasa senang yang
+          tumbuh dari hal-hal sederhana.
+        </p>
+      </div>
+
+      <span class="footer-note">
+        a feeling worth acknowledging
+      </span>
+
+      <button class="next-btn" onclick="nextSlide()">
+        Continue →
+      </button>
+    </section>
+
+    <!-- SLIDE 6 -->
+    <section class="slide">
+      <span class="number">05 / WHAT MATTERS</span>
+
+      <div class="content">
+        <span class="quote-mark">“</span>
+
+        <h2>
+          Aku tidak ingin<br>
+          terburu-buru.
+        </h2>
+
+        <p>
+          Aku percaya kesungguhan bukan hanya
+          tentang kata-kata, tetapi juga sikap,
+          komunikasi, usaha, dan bagaimana
+          kita saling menghargai.
+        </p>
+      </div>
+
+      <span class="footer-note">
+        let it grow naturally
+      </span>
+
+      <button class="next-btn" onclick="nextSlide()">
+        Continue →
+      </button>
+    </section>
+
+    <!-- SLIDE 7 -->
+    <section class="slide">
+      <span class="number">06 / A LITTLE WISH</span>
+
+      <div class="content">
+        <div class="flower">✿</div>
+
+        <h2>
+          Semoga langkah<br>
+          kita dimudahkan.
+        </h2>
+
+        <p>
+          Aku tidak tahu bagaimana cerita ini
+          akan berjalan. Namun aku berharap
+          apa pun yang sedang kita usahakan,
+          semoga selalu membawa kebaikan.
+        </p>
+      </div>
+
+      <span class="footer-note">
+        with hope and prayers
+      </span>
+
+      <button class="next-btn" onclick="nextSlide()">
+        One last thing →
+      </button>
+    </section>
+
+    <!-- SLIDE 8: FINAL -->
+    <section class="slide final-slide">
+      <span class="eyebrow">A SONG FOR YOU</span>
+
+      <div class="flower">♡</div>
+
+      <h2>
+        Some feelings<br>
+        sound better in a song.
+      </h2>
+
+      <p>
+        Ada hal-hal yang belum bisa
+        aku ungkapkan dengan sempurna.
+        Mungkin lagu ini bisa mewakilinya.
+      </p>
+
+      <a
+        class="music-btn"
+        href="https://www.youtube.com/results?search_query=Virgoun+Surat+Cinta+Untuk+Starla+Official+Music+Video"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Watch the song ♫
+      </a>
+
+      <span class="signature">
+        — sincerely, me.
+      </span>
+    </section>
+
+    <!-- NAVIGATION -->
+    <div class="navigation">
+
+      <button id="prev" onclick="prevSlide()" disabled>
+        ←
+      </button>
+
+      <div class="progress">
+        <div id="progress-bar"></div>
+      </div>
+
+      <span id="page-count">01 / 08</span>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
